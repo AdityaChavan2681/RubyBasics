@@ -376,6 +376,37 @@
 # puts sum(array)
 # puts array.inject(0){ |sum, x| sum + x }
 
-sentence = "Welcome to the jungle"
-p sentence
-p sentence.sub("the jungle", "utopia")
+# String concatenation
+# first_name = "John"
+# last_name = "Doe"
+# full_name = first_name + last_name
+# p full_name
+
+# String interpolation
+# first_name = "John"
+# last_name = "Doe"
+# full_name = "#{first_name} #{last_name}"
+# p full_name
+
+# Substitute
+# sentence = "Welcome to the jungle"
+# p sentence
+# p sentence.sub("the jungle", "utopia")
+
+#Escape special characters
+# puts "Hi there \"i\'ts new string\" "
+#  puts "Hi there \*i\'ts new string\* "
+
+# Finding the class the object belongs to
+# p "Hello world".class
+# p 10.class
+
+# Some methods that can be used on objects
+# p 10.nil?
+# p "10".empty?
+# p "10".length
+# p "10".reverse
+
+p "-" * 20
+p "Hey"
+20.times {print "-"}
