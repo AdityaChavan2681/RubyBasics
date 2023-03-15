@@ -361,9 +361,21 @@
 # puts square(sq.to_f) 
 
 
-def print_full_name(first_name, last_name)
-    name = (first_name + last_name)
-    puts "The full name is " + name
-end
+# def print_full_name(first_name, last_name)
+#     name = (first_name + last_name)
+#     puts "The full name is " + name
+# end
 
-puts print_full_name("a","b")
+# puts print_full_name("a","b")
+
+# array = [1,2,3,4,5,6,7,8,9]
+
+# def sum(array)
+#     return array.inject(:+)
+# end
+# puts sum(array)
+# puts array.inject(0){ |sum, x| sum + x }
+
+sentence = "Welcome to the jungle"
+p sentence
+p sentence.sub("the jungle", "utopia")
