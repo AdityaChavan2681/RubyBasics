@@ -406,7 +406,77 @@
 # p "10".empty?
 # p "10".length
 # p "10".reverse
+# p "10".to_i.even?
+# p "11".to_i.odd?
+# p "11".to_i.even?
+# p "10".to_i.odd?
 
-p "-" * 20
-p "Hey"
+
+# print "This line" * 20
+# p "Hey"
+# 20.times {print "-"}
+# 20.times{puts "Hi"}
+# puts "This line" * 20
+# 20.times {puts rand(10000)}
+
+# p 10.eql?(10.0)
+# p 10.0.eql?(10.0)
+# p "10".eql?(10.0)
+
+# def multiply(num1, num2)
+#     num1.to_f * num2.to_f
+# end
+
+# def add(num1, num2)
+#     num1.to_f + num2.to_f
+# end
+
+# def divide(num1, num2)
+#     num1.to_f / num2.to_f
+# end
+
+# def subtract(num1, num2)
+#     num1.to_f - num2.to_f
+# end
+
+# def mod(num1, num2)
+#     num1.to_f % num2.to_f
+# end
+
+# p "Enter first number"
+# num1 = gets.chomp
+
+# p "Enter second number"
+# num2 = gets.chomp
+
+# p "The Multiplication results to #{multiply(num1, num2)}"
+# p "The Addition results to #{add(num1, num2)}"
+# p "The Subtraction results to #{subtract(num1, num2)}"
+# p "The Division results to #{divide(num1, num2)}"
+# p "The Modulus results to #{mod(num1, num2)}"
+
+# Branching
+puts "Simple calculator"
 20.times {print "-"}
+puts
+puts
+puts "Enter your First number"
+
+num1 = gets.chomp
+puts "Enter your Second number"
+num2 = gets.chomp
+
+puts "What operation do you want to perform?"
+puts "Enter 1 for Addition, Enter 2 for Subtraction, Enter 3 for Multiplication"
+user_choice = gets.chomp
+
+if user_choice == "1"
+    puts "You have chosen to Add #{num1} with #{num2} and the result is #{num1.to_f + num2.to_f}"
+elsif user_choice == "2"
+    puts "You have chosen to Subtract #{num1} with #{num2} and the result is #{num1.to_f - num2.to_f}"
+elsif user_choice == "3"
+    puts "You have chosen to Multiply #{num1} with #{num2} and the result is #{num1.to_f * num2.to_f}"
+else
+    puts "Invalid entry"
+end
+
