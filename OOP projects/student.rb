@@ -1,4 +1,8 @@
+require_relative "bcrypt_example"
+
+
 class Student
+  include Crud
   attr_accessor :first_name, :last_name, :email, :username, :password
 
   def initialize(first_name, last_name, username, email, password)
@@ -22,3 +26,7 @@ end
   puts johndoe
 
   puts henryford
+
+  hashed_password = johndoe.create_hash_digest(johndoe.password)
+
+  puts hashed_password
