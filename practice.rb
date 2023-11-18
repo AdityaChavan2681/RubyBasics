@@ -1,3 +1,23 @@
+
+# V variable = V array/datastructure
+
+address = [1,2,3,4,5,6,7,8,9]
+
+# Print address
+
+p address
+
+# Print the data on 5th index
+
+p address[5]
+
+# Assigned reversed output of address to new_address
+
+new_address = address.reverse!
+
+p new_address
+
+
 # load 'hello.rb'
 # puts 'Hello World'
 # p 'Hello World'
@@ -456,27 +476,27 @@
 # p "The Modulus results to #{mod(num1, num2)}"
 
 # Branching
-puts "Simple calculator"
-20.times {print "-"}
-puts
-puts
-puts "Enter your First number"
+# puts "Simple calculator"
+# 20.times {print "-"}
+# puts
+# puts
+# puts "Enter your First number"
 
-num1 = gets.chomp
-puts "Enter your Second number"
-num2 = gets.chomp
+# num1 = gets.chomp
+# puts "Enter your Second number"
+# num2 = gets.chomp
 
-puts "What operation do you want to perform?"
-puts "Enter 1 for Addition, Enter 2 for Subtraction, Enter 3 for Multiplication"
-user_choice = gets.chomp
+# puts "What operation do you want to perform?"
+# puts "Enter 1 for Addition, Enter 2 for Subtraction, Enter 3 for Multiplication"
+# user_choice = gets.chomp
 
-if user_choice == "1"
-    puts "You have chosen to Add #{num1} with #{num2} and the result is #{num1.to_f + num2.to_f}"
-elsif user_choice == "2"
-    puts "You have chosen to Subtract #{num1} with #{num2} and the result is #{num1.to_f - num2.to_f}"
-elsif user_choice == "3"
-    puts "You have chosen to Multiply #{num1} with #{num2} and the result is #{num1.to_f * num2.to_f}"
-else
-    puts "Invalid entry"
-end
+# if user_choice == "1"
+#     puts "You have chosen to Add #{num1} with #{num2} and the result is #{num1.to_f + num2.to_f}"
+# elsif user_choice == "2"
+#     puts "You have chosen to Subtract #{num1} with #{num2} and the result is #{num1.to_f - num2.to_f}"
+# elsif user_choice == "3"
+#     puts "You have chosen to Multiply #{num1} with #{num2} and the result is #{num1.to_f * num2.to_f}"
+# else
+#     puts "Invalid entry"
+# end
 
