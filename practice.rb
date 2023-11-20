@@ -9,6 +9,80 @@
 #  => "john doe" 
 # 3.0.0 :007 > 
 
+# We can identify the datatype/class of a variable/object using/invoking .class method
+
+# 3.0.0 :023 > full_name.class
+#  => String 
+# 3.0.0 :024 > 10.class
+#  => Integer 
+# 3.0.0 :025 > 10.0.class
+#  => Float 
+# 3.0.0 :026 > false.class
+#  => FalseClass 
+# 3.0.0 :027 > true.class
+#  => TrueClass 
+# 3.0.0 :028 > 
+# 3.0.0 :028 > first_name.methods
+#  => 
+
+## ^ provides a list of methods that we can perform on the variables/objects 
+
+# Examples of type conversion 3.0.0 :029 > 10.class
+#  => Integer 
+# 3.0.0 :030 > 10.to_s
+#  => "10" 
+# 3.0.0 :031 > 10.to_s.class
+#  => String 
+# 3.0.0 :032 > 10.to_i.class
+#  => Integer 
+# 3.0.0 :033 > 10.to_f.class
+#  => Float 
+# 3.0.0 :034 > 
+# 3.0.0 :038 > full_name.empty?
+#  => false 
+# 3.0.0 :039 > "".empty?
+# 3.0.0 :040 > ''.empty?
+# 3.0.0 :044 > "".nil?
+#  => false 
+# 3.0.0 :045 > ''.nil?
+#  => false 
+# 3.0.0 :046 > 
+# 3.0.0 :046 > sentence = "Welcome to the jungle"
+#  => "Welcome to the jungle" 
+
+# Usage of word/sentence substitute 
+
+# 3.0.0 :047 > sentence.sub("the jungle","utopia")
+#  => "Welcome to utopia" 
+
+# Usage of word/sentence global substitute 
+
+# 3.0.0 :048 > sentence.gsub("the jungle","island")
+#  => "Welcome to island" 
+# 3.0.0 :049 > 
+#  => "john" 
+# 3.0.0 :051 > new_first_name
+#  => "john" 
+
+# Escaping, using single/double quotes within a double quote sentence and using \ before the quote within
+
+# 3.0.0 :069 > string_reference = 
+# 3.0.0 :070 > "This is a string \'This is a string 2\' 1 "
+#  => "This is a string 'This is a string 2' 1 " 
+# 3.0.0 :071 > 
+
+
+
+# A variable referencing another variable points to the location of the data and not at the variable/ point by value/reference
+
+# 3.0.0 :052 > first_name = "john1"
+#  => "john1" 
+# 3.0.0 :053 > 
+# 3.0.0 :054 > new_first_name
+#  => "john" 
+# 3.0.0 :055 > 
+
+                   
 
 # There is a difference between using ' ' and " " 
 
