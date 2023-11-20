@@ -1,22 +1,104 @@
+# IRB output testing variables.
+
+# 3.0.0 :004 > last_name = "doe"
+#  => "doe" 
+# 3.0.0 :005 > full_name = first_name + last_name
+#  => "johndoe" 
+# 3.0.0 :006 > 
+# 3.0.0 :006 > full_name = first_name + " " + last_name
+#  => "john doe" 
+# 3.0.0 :007 > 
+
+
+# There is a difference between using ' ' and " " 
+
+##first_name = "john"
+##last_name = "doe"
+
+# String concatenation
+
+##p first_name + " " +last_name
+
+# String interpolation only works with " " and not with ' '
+
+##p "#{first_name} #{last_name}"
+
+# To view current directory:
+
+# pwd
+
+# To create a directory:
+
+# mkdir directory_name
+
+# To move into a directory:
+
+# cd directory_name
+
+# To list all directories and files within current directory:
+
+# ls
+
+# To list all directories and files within current directory including hidden files:
+
+# ls -a
+
+# To move out of a directory (1 level up):
+
+# cd ..
+
+# To print hello world to the console or output:
+
+# puts "Hello World!"
+
+
+
+# Below the say_hello is a method defined by using def followed by an end to signify end of the method "hello world" is a parameter passed into thing_to_say
+
+##def say_hello(thing_to_say)
+##  puts thing_to_say
+##end
+
+##say_hello "Hello World!"
+
+# All of them below display the value of variable/object greeting, p displays in the raw form
+
+## greeting = "Hello World!"
+## p greeting
+## puts greeting
+## print greeting
+
+# Prints the string as it is
+
+## print "Hello World!"
+
+# Stands for Put String, will add a line after the output
+
+## puts "Hello World!"
+
+# P prints the raw data/object put after it, useful for debugging 
+
+## p "Hello World!"
 
 # V variable = V array/datastructure
 
-address = [1,2,3,4,5,6,7,8,9]
+## address = [1,2,3,4,5,6,7,8,9]
 
 # Print address
 
-p address
+## p address
 
 # Print the data on 5th index
 
-p address[5]
+##  p address[5]
 
 # Assigned reversed output of address to new_address
 
-new_address = address.reverse!
+## new_address = address.reverse!
 
-p new_address
+## p new_address
 
+# Revising the course from here ^
 
 # load 'hello.rb'
 # puts 'Hello World'
