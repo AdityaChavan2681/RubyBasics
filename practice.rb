@@ -1,12 +1,68 @@
+# puts "Simple calculator"
+# 20.times {print "-"}
+# puts
+# puts
+# puts "Enter your First number"
+
+# num_1 = gets.chomp
+# puts "Enter your Second number"
+# num_2 = gets.chomp
+
+# puts "What operation do you want to perform?"
+# puts "Enter 1 for Addition, Enter 2 for Subtraction, Enter 3 for Multiplication"
+# user_choice = gets.chomp
+
+# if user_choice == "1"
+#     puts "You have chosen to Add #{num_1} with #{num_2} and the result is #{num_1.to_f + num_2.to_f}"
+# elsif user_choice == "2"
+#     puts "You have chosen to Subtract #{num_1} with #{num_2} and the result is #{num_1.to_f - num_2.to_f}"
+# elsif user_choice == "3"
+#     puts "You have chosen to Multiply #{num_1} with #{num_2} and the result is #{num_1.to_f * num_2.to_f}"
+# else
+#     puts "Invalid entry"
+# end
+
+
+puts "Simple Calculator"
+20.times {print "-"}
+puts
+puts
+puts
+puts "Enter the first number"
+num_1 = gets.chomp
+puts "Enter the second number"
+num_2 = gets.chomp
+puts "Enter your choice of operation"
+puts "Enter 1 for addition, 2 for subtraction and 3 for multiplication"
+user_choice = gets.chomp
+if user_choice == "1"
+  puts "Addition of #{num_1} and #{num_2} is #{num_1.to_f + num_2.to_f}"
+elsif user_choice == "2"
+  puts "Subtraction of #{num_1} and #{num_2} is #{num_2.to_f - num_1.to_f}"
+elsif user_choice == "3"
+  puts "Multiplication of #{num_1} and #{num_2} is #{num_2.to_f * num_1.to_f}"
+else
+  puts "Invalid input"
+end
+
+
+
+
+# 20.times {print "Hello "}
+# 20.times {print "-"}
+# 20.times {puts rand(20)}
+# puts rand
+# puts rand(40)
+
 # puts "What is your first name?"
 # first_name = gets.chomp
 # puts "Thank you, you said your first name is #{first_name}"
 
 # Need to convert variable type to integer to make sure output is integer.
 
-puts "Enter a number to be multiplied by 2"
-input = gets.chomp
-puts input.to_i * 2
+# puts "Enter a number to be multiplied by 2"
+# input = gets.chomp
+# puts input.to_i * 2
 
 # IRB output testing variables.
 
@@ -641,28 +697,4 @@ puts input.to_i * 2
 # p "The Division results to #{divide(num1, num2)}"
 # p "The Modulus results to #{mod(num1, num2)}"
 
-# Branching
-# puts "Simple calculator"
-# 20.times {print "-"}
-# puts
-# puts
-# puts "Enter your First number"
-
-# num1 = gets.chomp
-# puts "Enter your Second number"
-# num2 = gets.chomp
-
-# puts "What operation do you want to perform?"
-# puts "Enter 1 for Addition, Enter 2 for Subtraction, Enter 3 for Multiplication"
-# user_choice = gets.chomp
-
-# if user_choice == "1"
-#     puts "You have chosen to Add #{num1} with #{num2} and the result is #{num1.to_f + num2.to_f}"
-# elsif user_choice == "2"
-#     puts "You have chosen to Subtract #{num1} with #{num2} and the result is #{num1.to_f - num2.to_f}"
-# elsif user_choice == "3"
-#     puts "You have chosen to Multiply #{num1} with #{num2} and the result is #{num1.to_f * num2.to_f}"
-# else
-#     puts "Invalid entry"
-# end
-
+# Branch
