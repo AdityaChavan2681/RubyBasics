@@ -1,4 +1,13 @@
-# if/else
+name = "John"
+if name == "John"
+  puts "Welcome to the program John"
+elsif name == "Jack"
+  puts "Welcome to the program Jack"
+else
+  puts "Welcome to the program user"
+end
+
+#if/else
 
 # condition = false
 # another_condition = false
