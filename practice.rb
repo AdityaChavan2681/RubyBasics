@@ -1,3 +1,14 @@
+# if/else
+
+# condition = false
+# another_condition = false
+# if !condition && !another_condition
+#   puts "This signifies true"
+# else
+#   puts "This signifies false"
+# end
+# puts "la la"
+
 # First way to do a calculator
 
 # def multiply(num_1,num_2)
