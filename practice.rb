@@ -1,3 +1,34 @@
+# First way to do a calculator
+
+# def multiply(num_1,num_2)
+#   num_1.to_f * num_2.to_f
+# end
+# def add(num_1,num_2)
+#   num_1.to_f + num_2.to_f
+# end
+# def subtract(num_1,num_2)
+#   num_2.to_f - num_1.to_f
+# end
+# def divide(num_1,num_2)
+#   num_2.to_f / num_1.to_f
+# end
+# puts "Simple Calculator"
+# 20.times {print "-"}
+# puts
+# puts
+# puts
+# puts "Enter the first number"
+# num_1 = gets.chomp
+# puts "Enter the second number"
+# num_2 = gets.chomp
+# puts "Enter your choice of operation"
+# puts "The first number multiplied by second number is#{multiply(num_1,num_2)}"
+# puts "The first number added with second number is#{add(num_1,num_2)}"
+# puts "The first number subtracted from second number is#{subtract(num_1,num_2)}"
+# puts "The first number divided by second number is#{divide(num_1,num_2)}"
+
+# Second way to do a calculator
+
 # puts "Simple calculator"
 # 20.times {print "-"}
 # puts
@@ -22,28 +53,29 @@
 #     puts "Invalid entry"
 # end
 
+# Third way to do a calculator
 
-puts "Simple Calculator"
-20.times {print "-"}
-puts
-puts
-puts
-puts "Enter the first number"
-num_1 = gets.chomp
-puts "Enter the second number"
-num_2 = gets.chomp
-puts "Enter your choice of operation"
-puts "Enter 1 for addition, 2 for subtraction and 3 for multiplication"
-user_choice = gets.chomp
-if user_choice == "1"
-  puts "Addition of #{num_1} and #{num_2} is #{num_1.to_f + num_2.to_f}"
-elsif user_choice == "2"
-  puts "Subtraction of #{num_1} and #{num_2} is #{num_2.to_f - num_1.to_f}"
-elsif user_choice == "3"
-  puts "Multiplication of #{num_1} and #{num_2} is #{num_2.to_f * num_1.to_f}"
-else
-  puts "Invalid input"
-end
+# puts "Simple Calculator"
+# 20.times {print "-"}
+# puts
+# puts
+# puts
+# puts "Enter the first number"
+# num_1 = gets.chomp
+# puts "Enter the second number"
+# num_2 = gets.chomp
+# puts "Enter your choice of operation"
+# puts "Enter 1 for addition, 2 for subtraction and 3 for multiplication"
+# user_choice = gets.chomp
+# if user_choice == "1"
+#   puts "Addition of #{num_1} and #{num_2} is #{num_1.to_f + num_2.to_f}"
+# elsif user_choice == "2"
+#   puts "Subtraction of #{num_1} and #{num_2} is #{num_2.to_f - num_1.to_f}"
+# elsif user_choice == "3"
+#   puts "Multiplication of #{num_1} and #{num_2} is #{num_2.to_f * num_1.to_f}"
+# else
+#   puts "Invalid input"
+# end
 
 
 
