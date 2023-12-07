@@ -1,11 +1,31 @@
-name = "John"
-if name == "John"
-  puts "Welcome to the program John"
-elsif name == "Jack"
-  puts "Welcome to the program Jack"
-else
-  puts "Welcome to the program user"
-end
+# Arrays
+
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# b = "a".."z"
+# puts a.class
+# puts a.first
+# puts a.last
+# print a.reverse
+# print b
+
+# print arr1.push(6) # added or pushed 6 to the end of the array
+# puts
+# print arr1 << (7) # added or pushed 7 to the end of the array
+# puts
+# print arr1.unshift(0) # added or unshifted 0 to the beginning of the array
+# puts
+# print arr1.insert(3,4) # added or inserted 3 to the 3rd position of the array
+# puts
+
+
+# name = "John"
+# if name == "John"
+#   puts "Welcome to the program John"
+# elsif name == "Jack"
+#   puts "Welcome to the program Jack"
+# else
+#   puts "Welcome to the program user"
+# end
 
 #if/else
 
@@ -421,14 +441,6 @@ end
 # puts arr1.last # fetches the last element from the array
 # puts arr1.take(2) # fetches the mentioned element from the array
 
-# print arr1.push(6) # added or pushed 6 to the end of the array
-# puts
-# print arr1 << (7) # added or pushed 7 to the end of the array
-# puts
-# print arr1.unshift(0) # added or unshifted 0 to the beginning of the array
-# puts
-# print arr1.insert(3,4) # added or inserted 3 to the 3rd position of the array
-# puts
 
 # # print arr1.drop(2) # dropped the elements from the index 0-2 array
 # puts
