@@ -1,4 +1,37 @@
 
+
+# Arrays part  1
+
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9,10,3]
+
+# a << (10)
+# puts a.length
+# puts a.include?(10)
+# a.push("New item")
+# print a
+# a.pop()
+# print a
+# print a.join
+# print a.join("-")
+# print a.join(", ")
+# b = a.join("-")
+# print b.split("-")
+# puts a[0]
+# for i in a
+#   print a
+# end
+# a.to_s
+# c = ["Hi", "my", "name", "is", "Jack", "and","This", "is", "ror"]
+# c.each do |arr|
+#   print arr + "-"
+# end
+# c.each {|arr| print arr + "-"}
+# c.each {|arr| print arr.capitalize + "-"}
+# d = (1..100)
+# print d.to_a.shuffle
+# print d.select{|number| number.odd?}
+
+
 # Arrays
 
 # a = [1, 2, 3, 4, 5, 6, 7, 8, 9,10,3]
