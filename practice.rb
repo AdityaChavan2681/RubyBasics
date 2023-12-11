@@ -1,12 +1,19 @@
+
 # Arrays
 
-# a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9,10,3]
+
+# a.unshift("Jack")
+# a.push("New string")
+# a.uniq!
+# x = 1..100
 # b = "a".."z"
-# puts a.class
+# puts a
 # puts a.first
 # puts a.last
 # print a.reverse
-# print b
+# print b.to_a
+# print x.to_a
 
 # print arr1.push(6) # added or pushed 6 to the end of the array
 # puts
