@@ -1,3 +1,18 @@
+# styling
+
+# this_is_snake_case
+
+# def my_snake_case
+
+# end
+
+# ThisIsCamelCase
+
+# class CamelCase
+
+# end
+
+
 # Hashes
 
 # simple_hash = {'a'=>1, 'b'=>2, 'c'=>3}
