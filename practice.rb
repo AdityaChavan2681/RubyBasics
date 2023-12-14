@@ -1,3 +1,39 @@
+# Hashes
+
+# simple_hash = {'a'=>1, 'b'=>2, 'c'=>3}
+# my_details = {'name'=>'john', 'favcolor'=>'blue'}
+# print simple_hash['b']
+# symbol_hash = {a: 1, b: 2, c: 3}
+# p simple_hash.keys
+# p simple_hash.values
+# simple_hash.each do |key, value|
+#   puts "The class for key is #{key.class} and the value is #{value.class}"
+# end
+# myhash = {a: 1, b: 2, c: 'Ruby', d: 4, e: "John"}
+# myhash.each { |some_key, some_value| puts "key is #{some_key} and value is#{some_value}" }
+# print myhash.select{ |k,v| v.is_a?(String)}
+# print myhash.each{ |k,v| myhash.delete(k) if v.is_a?(String)}
+
+#  hash1 = { 'name': 'user1', 'subject': 'maths', 'topic': 'ruby' }
+
+# hash2 = { 'name2': 'user2', 'subject2': 'science', 'topic2': 'python' }
+
+# puts hash1.size
+# puts hash2.size
+
+# puts hash1["name"]
+# puts hash1["topic"]
+
+# puts hash2["name"]
+# puts hash2["topic"]
+
+# hash1.each do |key, value|
+#     puts "#{key}: #{value}"
+# end
+
+# hash2.each do |key, value|
+#     puts "#{key}: #{value}"
+# end
 
 
 # Arrays part  1
@@ -8,6 +44,9 @@
 # puts a.length
 # puts a.include?(10)
 # a.push("New item")
+# a.append("New item")
+# a.unshift("Jack")
+# a.push("New string")
 # print a
 # a.pop()
 # print a
@@ -36,8 +75,6 @@
 
 # a = [1, 2, 3, 4, 5, 6, 7, 8, 9,10,3]
 
-# a.unshift("Jack")
-# a.push("New string")
 # a.uniq!
 # x = 1..100
 # b = "a".."z"
@@ -492,27 +529,7 @@
 # puts
 # print arr1.uniq # shifted the 1st element from the array
 
-# hash1 = { 'name': 'user1', 'subject': 'maths', 'topic': 'ruby' }
-
-# hash2 = { 'name2': 'user2', 'subject2': 'science', 'topic2': 'python' }
-
-# puts hash1.size
-# puts hash2.size
-
-# puts hash1["name"]
-# puts hash1["topic"]
-
-# puts hash2["name"]
-# puts hash2["topic"]
-
-# hash1.each do |key, value|
-#     puts "#{key}: #{value}"
-# end
-
-# hash2.each do |key, value|
-#     puts "#{key}: #{value}"
-# end
-
+#
 # age = 18
 
 # if age > 18
