@@ -1,11 +1,14 @@
 class Student # class/object definition
-  attr_accessor :first_name, :last_name, :email, :username
+  attr_accessor :first_name, :last_name, :email ,:username, :password
   
-  @first_name #class instance/instance variable
-  @last_name
-  @email
-  @username
-  @password
+  # To initialize the variables with less code v
+  def initialize(first_name, last_name, username, email, password)
+    @first_name = first_name
+    @last_name = last_name
+    @username = username
+    @email = email
+    @password = password
+  end
 
   # # setter
   # def first_name(name)
@@ -17,16 +20,20 @@ class Student # class/object definition
   #   @first_name
   # end
 
-  def to_s
-    "First name: #{@first_name}"
+  def set_username
+    @username = "john1"
   end
   
-  john = Student.new
-  john.first_name = "John"
-  john.last_name = "Doe"
-  john.email = "john@doe.com"
-  puts john.first_name
-  puts john.last_name
-  puts john.email
-  puts john.username
+  def to_s
+    "First name: #{@first_name},
+    Last name: #{@last_name},
+    Username: #{@username},
+    Email address: #{@email}"
+  end
+  
+  john = Student.new("John", "Doe", "john1", "john@doe.com", "password1")
+  jack = Student.new("Jack", "Dat", "jack1", "jack@dat.com", "password2")
+
+  puts john
+  puts jack
 end 
