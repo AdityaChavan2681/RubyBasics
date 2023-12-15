@@ -5,13 +5,18 @@ class Student # class/object definition
   @username
   @password
 
-  def to_stringg
-    "First name:#{@first_name}"
+  # setter
+  def first_name(name)
+    @first_name = name
+  end
 
+  # getter
+  def to_s
+    "First name: #{@first_name}"
   end
 end
 
 john = Student.new
 puts john
-# john.first_name = "John"
-# puts john
+john.first_name("John")
+puts john
