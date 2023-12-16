@@ -5,33 +5,33 @@ gemfile true do
   gem 'bcrypt'
 end
 
-require 'bcrypt'
 
+module Crud
+  require 'bcrypt'
 
-users = [
+  puts "Module crud activeted"
 
-  {username: "name", password: "password1"},
-  {username: "john", password: "password2"},
-  {username: "jack", password: "password3"},
-  {username: "john1", password: "password4"},
-  {username: "jack2", password: "password5"}
-
-  ]
-
-
-def create_hash_digest(password)
-  BCrypt::Password.create(password)
-end
-
-def verify_hash_digest(password)
-  BCrypt::Password.new(password)
-end
-
-def create_secure_users(list_of_users)
-  list_of_users.each do |user_record|
-    user_record[:password] = create_hash_digest(user_record[:password])
+  def Crud.create_hash_digest(password)
+    BCrypt::Password.create(password)
   end
-  list_of_users
+
+  def Crud.verify_hash_digest(password)
+    BCrypt::Password.new(password)
+  end
+
+  def Crud.create_secure_users(list_of_users)
+    list_of_users.each do |user_record|
+      user_record[:password] = create_hash_digest(user_record[:password])
+    end
+    list_of_users
+  end
+    
+  def authenticate_user(username, password, list_of_users)
+    list_of_users.each do |user_record|
+      if user_record[:username] == username && verify_hash_digest(user_record[:password]) == password
+        return user_record
+      end
+    end
+    "Credentials were not correct"
+  end
 end
-  
-puts create_secure_users(users) # passing hash digest here
