@@ -11,15 +11,15 @@ module Crud
 
   puts "Module crud activeted"
 
-  def Crud.create_hash_digest(password)
+  def self.create_hash_digest(password)
     BCrypt::Password.create(password)
   end
 
-  def Crud.verify_hash_digest(password)
+  def self.verify_hash_digest(password)
     BCrypt::Password.new(password)
   end
 
-  def Crud.create_secure_users(list_of_users)
+  def self.create_secure_users(list_of_users)
     list_of_users.each do |user_record|
       user_record[:password] = create_hash_digest(user_record[:password])
     end
