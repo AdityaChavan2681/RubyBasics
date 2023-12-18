@@ -1,4 +1,7 @@
+require_relative "crud"
+
 class Student # class/object definition
+  include Crud
   attr_accessor :first_name, :last_name, :email ,:username, :password
   
   # To initialize the variables with less code v
@@ -30,10 +33,11 @@ class Student # class/object definition
     Username: #{@username},
     Email address: #{@email}"
   end
+end 
   
   john = Student.new("John", "Doe", "john1", "john@doe.com", "password1")
   jack = Student.new("Jack", "Dat", "jack1", "jack@dat.com", "password2")
 
-  puts john
-  puts jack
-end 
+hashed_password = john.create_hash_digest(john.password)
+
+puts hashed_password
